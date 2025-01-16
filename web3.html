@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program - 3</title>
+    <style>
+        p{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var grow = setInterval(growing, 1000);
+        var font_size = 5;
+        var p = document.getElementById("demo");
+        function growing()
+        {
+            p.innerHTML = "TEXT GROWING";
+            p.setAttribute('style', "font-size: " + font_size + "px; color:red");
+            font_size += 5;
+            if (font_size >= 50) 
+            {
+                clearInterval(grow);
+                shrink = setInterval(shrinking, 1000);
+            }
+        }
+        function shrinking() 
+        {
+            font_size -= 5;
+            p.innerHTML = 'TEXT SHRINKING';
+            p.setAttribute('style', "font-size:" + font_size + "px; color: blue");
+            if (font_size === 5) 
+            {
+                clearInterval(shrink);
+                grow = setInterval(growing, 1000);
+            }
+        }
+    </script>
+</body>
+</html>

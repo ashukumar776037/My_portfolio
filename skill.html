@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills Section</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.skills-section {
+  text-align: center;
+  padding: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill i {
+  font-size: 3rem;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.skill:hover i {
+  color: #2196F3;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.skill:hover p {
+  color: #2196F3;
+}
+
+  </style>
+</head>
+<body>
+  <div class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <i class="fab fa-html5"></i>
+        <p>HTML5</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-css3-alt"></i>
+        <p>CSS3</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-js-square"></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-react"></i>
+        <p>React</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-python"></i>
+        <p>Python</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-git-alt"></i>
+        <p>Git</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-github"></i>
+        <p>GitHub</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
